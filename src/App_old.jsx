@@ -191,8 +191,8 @@ export default function App() {
         <div className="relative group">
           <div className="absolute -inset-4 bg-gradient-to-tr from-blue-900 to-blue-400 rounded-[2.5rem] opacity-15 blur-3xl group-hover:opacity-25 transition-opacity" />
           <div className="w-72 h-80 md:w-80 md:h-[400px] bg-white border border-slate-100 rounded-[2.5rem] relative overflow-hidden shadow-2xl">
-          
-              <img src="/headshot.jpg" alt="Beverly VanReenan" className="w-full h-full object-cover" />
+            {profileImage ? (
+              <img src={headshot.jpg alt="Beverly VanReenan" className="w-full h-full object-cover" }>
             ) : (
               <div className="w-full h-full bg-slate-50 flex flex-col items-center justify-center gap-4 p-8 text-center">
                 <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm border border-slate-100">
