@@ -192,7 +192,6 @@ export default function App() {
           <div className="absolute -inset-4 bg-gradient-to-tr from-blue-900 to-blue-400 rounded-[2.5rem] opacity-15 blur-3xl group-hover:opacity-25 transition-opacity" />
           <div className="w-72 h-80 md:w-80 md:h-[400px] bg-white border border-slate-100 rounded-[2.5rem] relative overflow-hidden shadow-2xl">
               <img src="/headshot.jpg" alt="Beverly VanReenan" className="w-full h-full object-cover" />
-            )}
             <div className="absolute bottom-0 inset-x-0 p-7 bg-gradient-to-t from-slate-900/85 to-transparent text-white">
               <p className="text-[9px] font-extrabold uppercase tracking-[0.35em] opacity-80 mb-1">Architecture</p>
               <p className="text-base font-bold">Inquiry · Systems · Outcomes</p>
