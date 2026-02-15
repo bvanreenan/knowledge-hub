@@ -192,19 +192,6 @@ export default function App() {
           <div className="absolute -inset-4 bg-gradient-to-tr from-blue-900 to-blue-400 rounded-[2.5rem] opacity-15 blur-3xl group-hover:opacity-25 transition-opacity" />
           <div className="w-72 h-80 md:w-80 md:h-[400px] bg-white border border-slate-100 rounded-[2.5rem] relative overflow-hidden shadow-2xl">
               <img src="/headshot.jpg" alt="Beverly VanReenan" className="w-full h-full object-cover" />
-            ) : (
-              <div className="w-full h-full bg-slate-50 flex flex-col items-center justify-center gap-4 p-8 text-center">
-                <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm border border-slate-100">
-                  <User size={40} className="text-slate-200" />
-                </div>
-                <p className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-slate-400">Portrait Placeholder</p>
-                {isAdmin && (
-                  <label className="inline-flex items-center gap-2 px-4 py-2.5 bg-blue-900 text-white rounded-xl text-[10px] font-extrabold uppercase tracking-[0.15em] cursor-pointer hover:bg-blue-800 transition-colors shadow-lg shadow-blue-100">
-                    <Camera size={14} /> Upload Headshot
-                    <input type="file" className="hidden" onChange={handleImageUpload} accept="image/*" />
-                  </label>
-                )}
-              </div>
             )}
             <div className="absolute bottom-0 inset-x-0 p-7 bg-gradient-to-t from-slate-900/85 to-transparent text-white">
               <p className="text-[9px] font-extrabold uppercase tracking-[0.35em] opacity-80 mb-1">Architecture</p>
@@ -383,7 +370,7 @@ export default function App() {
             className="flex items-center gap-3 bg-white text-slate-950 px-7 py-4 rounded-2xl font-extrabold uppercase text-[11px] tracking-[0.15em] hover:bg-blue-50 transition-colors no-underline">
             <Linkedin size={18} /> LinkedIn
           </a>
-          <a href="mailto:contact@beverlyvanreenan.com"
+          <a href="mailto:contact@beverlyvanreenan2@msn.com"
             className="flex items-center gap-3 bg-blue-800 text-white px-7 py-4 rounded-2xl font-extrabold uppercase text-[11px] tracking-[0.15em] hover:bg-blue-700 transition-colors no-underline">
             <MessageSquare size={18} /> Professional Inquiry
           </a>
@@ -552,7 +539,7 @@ export default function App() {
                   <button onClick={() => setIsAdmin(false)}
 				  className="text-green-600 hover:text-red-500 flex items-center gap-1.5 bg-transparent border-none cursor-pointer font-bold text-xs uppercase tracking-wider transition-colors">
                     <LogIn size={12} /> Logout
-                  </span>
+                  </button>
                 )}
               </div>
             </div>
